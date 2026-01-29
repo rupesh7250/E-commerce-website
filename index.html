@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StyleNest | Premium Fashion</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (for premium touch) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body style="background:#f4f5f7;">
+
+<!-- ================= PREMIUM NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 shadow">
+  <a class="navbar-brand fw-bold text-warning fs-3" href="#">
+    <i class="bi bi-bag-heart-fill"></i> StyleNest
+  </a>
+
+  <div class="ms-auto">
+    <ul class="navbar-nav flex-row gap-4 fs-5">
+      <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#men">Men</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#women">Women</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#kids">Kids</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#footer">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= SLIDER (PREMIUM BANNER) ================= -->
+<section id="home">
+  <div id="mainSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active position-relative">
+        <img src="man.webp" class="d-block w-100" style="height:480px; object-fit:cover;">
+        <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+          <h1 class="fw-bold">Men Collection</h1>
+          <p>Premium Styles for Modern Men</p>
+        </div>
+      </div>
+
+      <div class="carousel-item position-relative">
+        <img src="women.webp" class="d-block w-100" style="height:480px; object-fit:cover;">
+        <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+          <h1 class="fw-bold">Women Collection</h1>
+          <p>Elegance Meets Comfort</p>
+        </div>
+      </div>
+
+      <div class="carousel-item position-relative">
+        <img src="kids.webp" class="d-block w-100" style="height:480px; object-fit:cover;">
+        <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+          <h1 class="fw-bold">Kids Collection</h1>
+          <p>Colorful & Comfortable Wear</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" data-bs-target="#mainSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" data-bs-target="#mainSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= CATEGORY CARDS ================= -->
+<section class="container my-5">
+  <div class="row g-4 text-center">
+
+    <!-- MEN -->
+    <div class="col-md-4" id="men">
+      <div class="card shadow-lg h-100 border-0">
+        <img src="man.webp" class="card-img-top p-4 bg-white"
+             style="height:260px; object-fit:contain;">
+        <div class="card-body">
+          <h4 class="fw-bold">Men</h4>
+          <button class="btn btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menModal">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WOMEN -->
+    <div class="col-md-4" id="women">
+      <div class="card shadow-lg h-100 border-0">
+        <img src="women.webp" class="card-img-top p-4 bg-white"
+             style="height:260px; object-fit:contain;">
+        <div class="card-body">
+          <h4 class="fw-bold">Women</h4>
+          <button class="btn btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#womenModal">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="col-md-4" id="kids">
+      <div class="card shadow-lg h-100 border-0">
+        <img src="kids.webp" class="card-img-top p-4 bg-white"
+             style="height:260px; object-fit:contain;">
+        <div class="card-body">
+          <h4 class="fw-bold">Kids</h4>
+          <button class="btn btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#kidsModal">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+<div class="modal fade" id="menModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-warning">
+        <h5 class="modal-title">Men Collection</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Stylish shirts, t-shirts, jeans and formal wear crafted for modern men.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="womenModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-warning">
+        <h5 class="modal-title">Women Collection</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Trendy dresses, ethnic wear and premium outfits for women.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kidsModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-warning">
+        <h5 class="modal-title">Kids Collection</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Soft, colorful and comfortable clothing for kids of all ages.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer id="footer" class="bg-dark text-white text-center py-4">
+  <p class="mb-1">© 2026 Rupesh Kumar | 241FJ01038</p>
+  <small>StyleNest – Premium Fashion Store</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
